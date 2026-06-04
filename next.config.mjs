@@ -6,13 +6,13 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isGithubActions ? '/elan' : '',
-  assetPrefix: isGithubActions ? '/elan/' : '',
+  basePath: isGithubActions ? '/elan-production' : '',
+  assetPrefix: isGithubActions ? '/elan-production/' : '',
   env: {
-    NEXT_PUBLIC_BASE_PATH: isGithubActions ? '/elan' : '',
+    NEXT_PUBLIC_BASE_PATH: isGithubActions ? '/elan-production' : '',
   },
   sassOptions: {
-    additionalData: `$asset-prefix: "${isGithubActions ? '/elan' : ''}";`,
+    additionalData: `$asset-prefix: "${isGithubActions ? '/elan-production' : ''}";`,
   },
 };
 
