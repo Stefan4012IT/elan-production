@@ -614,6 +614,12 @@ h3 {
   text-transform: uppercase;
 }
 
+@media (max-width: 1120px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .ease {
   position: relative;
   display: flex;
@@ -1483,26 +1489,27 @@ h3 {
     nav {
       width: 100%;
       flex-direction: column;
-      gap: 6px;
+      gap: 0;
       color: var(--text);
-      font-family: var(--heading-font);
-      font-size: clamp(2rem, 11vw, 3.6rem);
-      font-weight: 300;
-      letter-spacing: 0;
-      line-height: 1;
-      text-transform: none;
+      font-family: var(--body-font);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      line-height: 1.2;
+      text-transform: uppercase;
 
       a {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 18px 0;
+        min-height: 46px;
+        padding: 12px 0;
         border-bottom: 1px solid rgba(189, 181, 172, 0.58);
 
         &::after {
           content: '';
-          width: 34px;
+          width: 24px;
           height: 1px;
           background: rgba(156, 122, 67, 0.72);
         }

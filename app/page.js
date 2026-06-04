@@ -6,6 +6,7 @@ const content = {
   sr: {
     nav: {
       club: 'Klub',
+      training: 'Trening',
       membership: 'Članstvo',
       apply: 'Prijava',
       label: 'Glavna navigacija',
@@ -30,22 +31,42 @@ const content = {
         {
           eyebrow: 'Limited Membership',
           title: 'Ograničen broj članica',
-          text: 'Kvalitet treninga počinje kvalitetom okruženja, zato je broj članica namerno ograničen.',
+          text: 'Broj članica je namerno ograničen kako bi prostor ostao miran, pregledan i posvećen kvalitetu rada.',
         },
         {
           eyebrow: 'Guided Training',
-          title: 'Stručan nadzor',
-          text: 'Svi treninzi su vođeni uz prisustvo trenera, sa jasnom strukturom i fokusom na bezbedan napredak.',
+          title: 'Vođeni treninzi',
+          text: 'Svaki termin se odvija uz stručan nadzor trenera, jasnu strukturu i fokus na bezbedan napredak.',
         },
         {
           eyebrow: 'Individual Approach',
-          title: 'Program prema vama',
-          text: 'Plan treninga se prilagođava vašem iskustvu, ciljevima, tempu i individualnim potrebama.',
+          title: 'Individualni programi',
+          text: 'Program se prilagođava vašem iskustvu, ciljevima, tempu i individualnim potrebama.',
         },
         {
-          eyebrow: 'Boutique Environment',
-          title: 'Premium prostor',
-          text: 'Savremena oprema, funkcionalan enterijer i atmosfera koja podržava disciplinu, fokus i doslednost.',
+          eyebrow: 'Equipment',
+          title: 'Savremena oprema',
+          text: 'Oprema je birana da podrži funkcionalan, kvalitetan i precizan trening bez nepotrebnog čekanja.',
+        },
+        {
+          eyebrow: 'The Space',
+          title: 'Moderan prostor',
+          text: 'Funkcionalan enterijer i pažljivo oblikovana atmosfera podržavaju disciplinu, fokus i doslednost.',
+        },
+        {
+          eyebrow: 'The Team',
+          title: 'Posvećen tim',
+          text: 'Profesionalan tim prati trening proces, koriguje izvođenje i vodi vas kroz kontinuitet rada.',
+        },
+        {
+          eyebrow: 'Booking',
+          title: 'Jednostavno zakazivanje',
+          text: 'Termini se organizuju unapred, jasno i pregledno, kako bi trening imao svoje mesto u vašem rasporedu.',
+        },
+        {
+          eyebrow: 'Community',
+          title: 'Zajednica žena',
+          text: 'ÉLAN okuplja žene sa sličnim vrednostima, namerom i odnosom prema zdravlju, snazi i vremenu.',
         },
       ],
     },
@@ -180,6 +201,7 @@ const content = {
   en: {
     nav: {
       club: 'Club',
+      training: 'Training',
       membership: 'Membership',
       apply: 'Apply',
       label: 'Main navigation',
@@ -204,22 +226,42 @@ const content = {
         {
           eyebrow: 'Limited Membership',
           title: 'Limited number of members',
-          text: 'Training quality begins with the quality of the environment, which is why membership is intentionally limited.',
+          text: 'Membership is intentionally limited so the space stays calm, focused and dedicated to training quality.',
         },
         {
           eyebrow: 'Guided Training',
           title: 'Guided Training',
-          text: 'Every session is guided by a trainer, with clear structure and focus on safe progress.',
+          text: 'Every appointment is guided by a trainer, with clear structure and focus on safe progress.',
         },
         {
           eyebrow: 'Individual Approach',
-          title: 'Designed around you',
+          title: 'Individual programs',
           text: 'Training plans are adapted to your experience, goals, rhythm and individual needs.',
         },
         {
-          eyebrow: 'Boutique Environment',
-          title: 'Premium space',
-          text: 'Modern equipment, a functional interior and an atmosphere that supports discipline, focus and consistency.',
+          eyebrow: 'Equipment',
+          title: 'Modern equipment',
+          text: 'Equipment is selected to support functional, precise and high-quality training without unnecessary waiting.',
+        },
+        {
+          eyebrow: 'The Space',
+          title: 'Functional space',
+          text: 'A modern interior and carefully shaped atmosphere support discipline, focus and consistency.',
+        },
+        {
+          eyebrow: 'The Team',
+          title: 'Dedicated team',
+          text: 'A professional team follows the training process, corrects execution and guides long-term consistency.',
+        },
+        {
+          eyebrow: 'Booking',
+          title: 'Simple scheduling',
+          text: 'Appointments are organised in advance, clearly and simply, so training fits your schedule.',
+        },
+        {
+          eyebrow: 'Community',
+          title: 'Shared values',
+          text: 'ÉLAN brings together women with a similar approach to health, strength, intention and time.',
         },
       ],
     },
@@ -533,6 +575,9 @@ export default function Home() {
             <a href="#club" onClick={() => setIsMenuOpen(false)}>
               {copy.nav.club}
             </a>
+            <a href="#training" onClick={() => setIsMenuOpen(false)}>
+              {copy.nav.training}
+            </a>
             <a href="#membership" onClick={() => setIsMenuOpen(false)}>
               {copy.nav.membership}
             </a>
@@ -642,7 +687,7 @@ export default function Home() {
         <div className="ease__image ease__image--right" aria-hidden="true" />
       </section>
 
-      <section className="training-concept section-shell">
+      <section className="training-concept section-shell" id="training">
         <div className="training-concept__image" aria-hidden="true" />
         <div className="training-concept__content">
           <p className="section-kicker">{copy.trainingConcept.kicker}</p>
