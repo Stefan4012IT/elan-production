@@ -14,20 +14,20 @@ const content = {
     hero: {
       eyebrow: 'Beyond Training',
       title: 'Snaga, gracioznost, disciplina.',
-      text: 'ÉLAN je zajednica žena koje ulažu u svoje zdravlje, snagu i kvalitet života.',
+      text: 'ÉLAN je privatni prostor za trening namenjen ženama koje žele da grade snagu u mirnom, fokusiranom i prefinjenom okruženju.',
       primary: 'Join the Waiting List',
       secondary: 'O ÉLAN',
     },
     statement: {
-      kicker: 'A different kind of gym.',
-      title: 'O ÉLAN',
-      text: 'ÉLAN je privatna teretana za žene osmišljena kao alternativa tradicionalnim fitness centrima. Prostor u kome su privatnost, kvalitet treninga i atmosfera podjednako važni kao i rezultati.',
+      kicker: 'ÉLAN',
+      title: 'A different kind of gym.',
+      text: 'ÉLAN je zajednica žena koje ulažu u svoje zdravlje, snagu i kvalitet života. Prostor u kome su privatnost, kvalitet treninga i atmosfera podjednako važni kao i rezultati.',
       support:
         'Samo pažljivo vođeni treninzi, stručna podrška i okruženje koje omogućava da se fokusirate na sebe i svoje ciljeve.',
       note: 'Bez gužve. Bez čekanja na sprave. Bez univerzalnih programa.',
     },
     difference: {
-      kicker: 'The ÉLAN Experience',
+      kicker: 'ÉLAN iskustvo',
       title: 'More focus. Less distraction.',
       items: [
         {
@@ -73,28 +73,17 @@ const content = {
       ],
     },
     ease: {
-      kicker: 'Booking Policy',
-      title: 'Planirano. Fleksibilno. Jednostavno.',
-      text: 'Svi paketi važe na mesečnom nivou. Prilikom učlanjenja rezervišu se željeni termini treninga, a organizacija ostaje jasna, pregledna i prilagođena vašem rasporedu.',
-      note: 'U slučaju sprečenosti, termin je moguće blagovremeno otkazati putem aplikacije.',
+      kicker: 'THE ÉLAN EXPERIENCE',
+      title: 'More focus. Less distraction.',
       items: [
-        'Blagovremeno otkazani termini neće biti obračunati',
-        'Termin se može nadoknaditi u prvom dostupnom terminu',
-        'Fleksibilnost za članice uz očuvanje kvaliteta treninga',
-      ],
-      locality: [
-        {
-          eyebrow: 'Planned',
-          text: 'Željeni termini se rezervišu unapred',
-        },
-        {
-          eyebrow: 'Flexible',
-          text: 'Promene rasporeda se rešavaju kroz aplikaciju',
-        },
-        {
-          eyebrow: 'Simple',
-          text: 'Organizacija treninga ostaje jasna i nenametljiva',
-        },
+        'Ograničen broj članica',
+        'Vođeni treninzi uz stručan nadzor',
+        'Individualno prilagođeni programi',
+        'Savremena oprema',
+        'Moderan i funkcionalan prostor',
+        'Profesionalan i posvećen tim',
+        'Jednostavno zakazivanje termina',
+        'Zajednica žena sa sličnim vrednostima',
       ],
     },
     trainingConcept: {
@@ -147,7 +136,7 @@ const content = {
             'Za one koje žele maksimalnu podršku, napredak i posvećenost svojim ciljevima.',
         },
         {
-          name: 'SINGLE SESSION',
+          name: 'DECISION',
           detail: 'Pojedinačni trening',
           price: '3.000 RSD',
           description:
@@ -171,6 +160,17 @@ const content = {
         'Individual approach',
         'Boutique environment',
         'Female-focused experience',
+      ],
+    },
+    bookingPolicy: {
+      kicker: 'BOOKING POLICY',
+      title: 'Planned. Flexible. Simple.',
+      items: [
+        'Svi paketi važe na mesečnom nivou.',
+        'Prilikom učlanjenja rezervišu se željeni termini treninga.',
+        'U slučaju sprečenosti, termin je moguće blagovremeno otkazati putem aplikacije.',
+        'Blagovremeno otkazani termini neće biti obračunati i mogu se nadoknaditi u prvom dostupnom terminu kod izabranog trenera.',
+        'Na taj način obezbeđujemo fleksibilnost za članice, uz očuvanje kvaliteta rada i organizacije treninga.',
       ],
     },
     application: {
@@ -212,14 +212,14 @@ const content = {
     hero: {
       eyebrow: 'Beyond Training',
       title: 'Strength, Grace, Discipline.',
-      text: 'ÉLAN is a community for women who invest in their health, strength and quality of life.',
+      text: 'ÉLAN is a private training space for women who want to build strength in a calm, focused and refined environment.',
       primary: 'Join the Waiting List',
       secondary: 'About ÉLAN',
     },
     statement: {
-      kicker: 'A different kind of gym.',
-      title: 'About ÉLAN',
-      text: 'ÉLAN is a private gym for women, designed as an alternative to traditional fitness centres. A space where privacy, training quality and atmosphere matter as much as results.',
+      kicker: 'ÉLAN',
+      title: 'A different kind of gym.',
+      text: 'ÉLAN is a community for women who invest in their health, strength and quality of life. A space where privacy, training quality and atmosphere matter as much as results.',
       support:
         'Only carefully guided training, professional support and an environment that allows you to focus on yourself and your goals.',
       note: 'No crowding. No waiting for equipment. No generic programs.',
@@ -271,28 +271,17 @@ const content = {
       ],
     },
     ease: {
-      kicker: 'Booking Policy',
-      title: 'Planned. Flexible. Simple.',
-      text: 'All packages are valid on a monthly basis. Preferred training appointments are reserved upon joining, keeping the rhythm clear, structured and adapted to your schedule.',
-      note: 'If you are unable to attend, the appointment can be cancelled in time through the app.',
+      kicker: 'THE ÉLAN EXPERIENCE',
+      title: 'More focus. Less distraction.',
       items: [
-        'Appointments cancelled in time will not be charged',
-        'Missed sessions can be made up in the first available appointment',
-        'Flexibility for members while preserving training quality',
-      ],
-      locality: [
-        {
-          eyebrow: 'Planned',
-          text: 'Preferred training appointments are reserved in advance',
-        },
-        {
-          eyebrow: 'Flexible',
-          text: 'Schedule changes are handled through the app',
-        },
-        {
-          eyebrow: 'Simple',
-          text: 'Training organisation remains clear and effortless',
-        },
+        'Limited number of members',
+        'Guided training with professional supervision',
+        'Individually adapted programs',
+        'Modern equipment',
+        'Modern and functional space',
+        'Professional and dedicated team',
+        'Simple appointment scheduling',
+        'A community of women with similar values',
       ],
     },
     trainingConcept: {
@@ -345,7 +334,7 @@ const content = {
             'For those who want maximum support, progress and commitment to their goals.',
         },
         {
-          name: 'SINGLE SESSION',
+          name: 'DECISION',
           detail: 'Single session',
           price: '3,000 RSD',
           description:
@@ -369,6 +358,17 @@ const content = {
         'Individual approach',
         'Boutique environment',
         'Female-focused experience',
+      ],
+    },
+    bookingPolicy: {
+      kicker: 'BOOKING POLICY',
+      title: 'Planned. Flexible. Simple.',
+      items: [
+        'All packages are valid on a monthly basis.',
+        'Preferred training appointments are reserved upon joining.',
+        'If you are unable to attend, the appointment can be cancelled in time through the app.',
+        'Appointments cancelled in time will not be charged and can be made up in the first available appointment with the selected trainer.',
+        'This gives members flexibility while preserving the quality of work and training organisation.',
       ],
     },
     application: {
@@ -654,7 +654,44 @@ export default function Home() {
         <p>{copy.statement.support}</p>
       </section>
 
-      <section className="difference section-shell">
+      <section className="space">
+        <div className="space__copy">
+          <p className="section-kicker">{copy.space.kicker}</p>
+          <h2>{copy.space.title}</h2>
+          <p>{copy.space.text}</p>
+        </div>
+        <div
+          className="space__panel"
+          aria-label={copy.space.panel}
+          onTouchStart={handleSpaceTouchStart}
+          onTouchMove={handleSpaceTouchMove}
+          onTouchEnd={handleSpaceTouchEnd}
+          onTouchCancel={resetSpaceTouch}
+        >
+          <div className="space-carousel">
+            {spaceSlides.map((slide, index) => {
+              const isActive = activeSpaceSlide === index;
+
+              return (
+                <div
+                  className={`space-carousel__slide ${isActive ? 'is-active' : ''}`}
+                  key={`${slide.src}-${index}`}
+                  style={{
+                    '--slide-image': `url('${slide.src}')`,
+                    '--slide-position': slide.position,
+                    '--slide-index': index,
+                    '--slide-offset': getSpaceSlideOffset(index),
+                  }}
+                />
+              );
+            })}
+          </div>
+          <span>ÉLAN</span>
+          <small>{copy.space.panel}</small>
+        </div>
+      </section>
+
+      {/* <section className="difference section-shell">
         <div className="section-heading section-heading--centered">
           <p className="section-kicker">{copy.difference.kicker}</p>
           <h2>{copy.difference.title}</h2>
@@ -668,28 +705,30 @@ export default function Home() {
             </article>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section className="ease section-shell">
         <div className="ease__image ease__image--left" aria-hidden="true" />
         <div className="ease__content">
           <p className="section-kicker">{copy.ease.kicker}</p>
           <h2>{copy.ease.title}</h2>
-          <p>{copy.ease.text}</p>
-          <span>{copy.ease.note}</span>
+          {copy.ease.text ? <p>{copy.ease.text}</p> : null}
+          {copy.ease.note ? <span>{copy.ease.note}</span> : null}
           <ul>
             {copy.ease.items.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
-          <ul className="ease__locality">
-            {copy.ease.locality.map((item) => (
-              <li key={item.text}>
-                <span>{item.eyebrow}</span>
-                {item.text}
-              </li>
-            ))}
-          </ul>
+          {copy.ease.locality ? (
+            <ul className="ease__locality">
+              {copy.ease.locality.map((item) => (
+                <li key={item.text}>
+                  <span>{item.eyebrow}</span>
+                  {item.text}
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </div>
         <div className="ease__image ease__image--right" aria-hidden="true" />
       </section>
@@ -700,7 +739,7 @@ export default function Home() {
           <p className="section-kicker">{copy.trainingConcept.kicker}</p>
           <h2>{copy.trainingConcept.title}</h2>
           <p>{copy.trainingConcept.text}</p>
-          <span>{copy.trainingConcept.note}</span>
+          <p>{copy.trainingConcept.note}</p>
           <div className="training-concept__cards">
             {copy.trainingConcept.items.map((item) => (
               <article className="training-concept__card" key={item.title}>
@@ -764,40 +803,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="space">
-        <div className="space__copy">
-          <p className="section-kicker">{copy.space.kicker}</p>
-          <h2>{copy.space.title}</h2>
-          <p>{copy.space.text}</p>
+      <section className="booking-policy section-shell">
+        <div>
+          <p className="section-kicker">{copy.bookingPolicy.kicker}</p>
+          <h2>{copy.bookingPolicy.title}</h2>
         </div>
-        <div
-          className="space__panel"
-          aria-label={copy.space.panel}
-          onTouchStart={handleSpaceTouchStart}
-          onTouchMove={handleSpaceTouchMove}
-          onTouchEnd={handleSpaceTouchEnd}
-          onTouchCancel={resetSpaceTouch}
-        >
-          <div className="space-carousel">
-            {spaceSlides.map((slide, index) => {
-              const isActive = activeSpaceSlide === index;
-
-              return (
-                <div
-                  className={`space-carousel__slide ${isActive ? 'is-active' : ''}`}
-                  key={`${slide.src}-${index}`}
-                  style={{
-                    '--slide-image': `url('${slide.src}')`,
-                    '--slide-position': slide.position,
-                    '--slide-index': index,
-                    '--slide-offset': getSpaceSlideOffset(index),
-                  }}
-                />
-              );
-            })}
-          </div>
-          <span>ÉLAN</span>
-          <small>{copy.space.panel}</small>
+        <div className="booking-policy__body">
+          {copy.bookingPolicy.items.map((item) => (
+            <p key={item}>{item}</p>
+          ))}
         </div>
       </section>
 
