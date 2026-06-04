@@ -738,6 +738,86 @@ h3 {
   background-position: right center;
 }
 
+.training-concept {
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: clamp(34px, 7vw, 88px);
+  align-items: center;
+  border-top: 1px solid var(--border);
+}
+
+.training-concept__image {
+  min-height: clamp(520px, 46vw, 680px);
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(rgba(31, 29, 27, 0.04), rgba(31, 29, 27, 0.08)),
+    url('#{$asset-prefix}/images/elan-img-1.png') center / cover;
+}
+
+.training-concept__content {
+  min-width: 0;
+
+  h2 {
+    max-width: 680px;
+  }
+
+  > p:not(.section-kicker) {
+    max-width: 650px;
+    margin: 24px 0 0;
+    color: var(--muted);
+    font-size: clamp(1.02rem, 1.45vw, 1.18rem);
+  }
+
+  > span {
+    display: block;
+    max-width: 620px;
+    margin-top: 28px;
+    color: var(--text);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    line-height: 1.65;
+    text-transform: uppercase;
+  }
+}
+
+.training-concept__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 42px;
+  border: 1px solid var(--border);
+}
+
+.training-concept__card {
+  padding: clamp(24px, 3vw, 34px);
+
+  & + & {
+    border-left: 1px solid var(--border);
+  }
+
+  p {
+    margin: 0;
+    color: var(--accent);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    line-height: 1.35;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin-top: 18px;
+  }
+
+  span {
+    display: block;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+}
+
 .membership {
   display: grid;
   grid-template-columns: 0.72fr 1.28fr;
@@ -1308,6 +1388,7 @@ h3 {
   .ease,
   .space,
   .audience,
+  .training-concept,
   .application {
     grid-template-columns: 1fr;
   }
@@ -1332,6 +1413,22 @@ h3 {
     left: 0;
     margin-left: 0;
     border-left: 1px solid var(--border);
+  }
+
+  .training-concept__image {
+    min-height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .training-concept__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .training-concept__card {
+    & + & {
+      border-top: 1px solid var(--border);
+      border-left: 0;
+    }
   }
 
   .ease {

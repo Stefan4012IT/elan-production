@@ -74,6 +74,24 @@ const content = {
         },
       ],
     },
+    trainingConcept: {
+      kicker: 'Trening koncept',
+      title: 'Individualan pristup. Vođeni treninzi.',
+      text: 'Svaka klijentkinja prolazi kroz inicijalne konsultacije tokom kojih definišemo ciljeve, iskustvo i individualne potrebe. Na osnovu toga kreira se plan treninga koji se prilagođava vašem tempu, mogućnostima i željenim rezultatima.',
+      note: 'Na taj način obezbeđujemo sigurnost, kontinuitet i napredak u skladu sa mogućnostima i ciljevima svake članice.',
+      items: [
+        {
+          kicker: 'Individual Approach',
+          title: 'Designed around you.',
+          text: 'Bez obzira da li vam je cilj povećanje snage, oblikovanje tela, gubitak telesne mase ili unapređenje kondicije, pristup ostaje individualan.',
+        },
+        {
+          kicker: 'Guided Training',
+          title: 'Every session matters.',
+          text: 'Svi treninzi odvijaju se u okviru vođenih termina uz prisustvo trenera, sa jasnom strukturom, stručnim nadzorom i fokusom na kvalitetan rad.',
+        },
+      ],
+    },
     membership: {
       kicker: 'Membership',
       title: 'Limited Membership',
@@ -227,6 +245,24 @@ const content = {
         {
           eyebrow: 'Simple',
           text: 'Training organisation remains clear and effortless',
+        },
+      ],
+    },
+    trainingConcept: {
+      kicker: 'Training Concept',
+      title: 'Individual approach. Guided training.',
+      text: 'Every member begins with an initial consultation where we define goals, experience and individual needs. From there, a training plan is created around your pace, abilities and desired results.',
+      note: 'This keeps training safe, consistent and aligned with each member’s possibilities and goals.',
+      items: [
+        {
+          kicker: 'Individual Approach',
+          title: 'Designed around you.',
+          text: 'Whether your focus is strength, body composition, weight loss or conditioning, the approach remains personal and adapted to your progress.',
+        },
+        {
+          kicker: 'Guided Training',
+          title: 'Every session matters.',
+          text: 'All sessions take place in guided appointments with a trainer present, clear structure and professional supervision throughout the work.',
         },
       ],
     },
@@ -604,6 +640,25 @@ export default function Home() {
           </ul>
         </div>
         <div className="ease__image ease__image--right" aria-hidden="true" />
+      </section>
+
+      <section className="training-concept section-shell">
+        <div className="training-concept__image" aria-hidden="true" />
+        <div className="training-concept__content">
+          <p className="section-kicker">{copy.trainingConcept.kicker}</p>
+          <h2>{copy.trainingConcept.title}</h2>
+          <p>{copy.trainingConcept.text}</p>
+          <span>{copy.trainingConcept.note}</span>
+          <div className="training-concept__cards">
+            {copy.trainingConcept.items.map((item) => (
+              <article className="training-concept__card" key={item.title}>
+                <p>{item.kicker}</p>
+                <h3>{item.title}</h3>
+                <span>{item.text}</span>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="membership section-shell" id="membership">
