@@ -13,7 +13,7 @@ const content = {
     },
     hero: {
       eyebrow: 'Beyond Training',
-      title: 'A different kind of gym.',
+      title: 'Snaga, gracioznost, disciplina.',
       text: 'ÉLAN je zajednica žena koje ulažu u svoje zdravlje, snagu i kvalitet života.',
       primary: 'Join the Waiting List',
       secondary: 'O ÉLAN',
@@ -211,7 +211,7 @@ const content = {
     },
     hero: {
       eyebrow: 'Beyond Training',
-      title: 'A different kind of gym.',
+      title: 'Strength, Grace, Discipline.',
       text: 'ÉLAN is a community for women who invest in their health, strength and quality of life.',
       primary: 'Join the Waiting List',
       secondary: 'About ÉLAN',
