@@ -12,16 +12,18 @@ const content = {
       label: 'Glavna navigacija',
     },
     hero: {
-      eyebrow: 'Women’s Private Gym',
+      eyebrow: 'Beyond Training',
       title: 'A different kind of gym.',
       text: 'ÉLAN je zajednica žena koje ulažu u svoje zdravlje, snagu i kvalitet života.',
       primary: 'Join the Waiting List',
       secondary: 'O ÉLAN',
     },
     statement: {
-      kicker: 'Beyond Training',
+      kicker: 'A different kind of gym.',
       title: 'O ÉLAN',
       text: 'ÉLAN je privatna teretana za žene osmišljena kao alternativa tradicionalnim fitness centrima. Prostor u kome su privatnost, kvalitet treninga i atmosfera podjednako važni kao i rezultati.',
+      support:
+        'Samo pažljivo vođeni treninzi, stručna podrška i okruženje koje omogućava da se fokusirate na sebe i svoje ciljeve.',
       note: 'Bez gužve. Bez čekanja na sprave. Bez univerzalnih programa.',
     },
     difference: {
@@ -116,11 +118,11 @@ const content = {
     membership: {
       kicker: 'Membership',
       title: 'Limited Membership',
-      note: 'Memberships designed around your goals, schedule and progress. Članstvo je dostupno putem prijave.',
+      note: 'Memberships designed around your goals, schedule and progress.',
       highlights: [
-        'Limited membership',
-        'Guided training',
-        'Individual approach',
+        'Verujemo da kvalitet treninga počinje kvalitetom okruženja.',
+        'Zbog toga je broj članova ograničen.',
+        'Članstvo je dostupno putem prijave.',
       ],
       items: [
         {
@@ -160,14 +162,15 @@ const content = {
       panel: 'Boutique Training Environment',
     },
     audience: {
-      kicker: 'Training',
+      kicker: 'Your ÉLAN Journey',
       title: 'Designed around women.',
-      text: 'Trening programi kreirani su da podrže snagu, zdravlje i dugoročne rezultate. Bez univerzalnih pristupa. Bez fitness trendova. Fokus na ono što funkcioniše.',
+      text: 'Svako članstvo počinje konsultacijama kroz koje razumemo vaše ciljeve, iskustvo i način života. Na osnovu toga ÉLAN pristup ostaje ličan, strukturisan i usmeren na dugoročni napredak.',
       items: [
-        'Inicijalne konsultacije za razumevanje ciljeva i polaznog nivoa',
-        'Program prilagođen tempu, mogućnostima i željenim rezultatima',
-        'Vođeni termini uz stručni nadzor trenera',
-        'Kontinuitet, sigurnost i napredak u skladu sa svakom članicom',
+        'Limited membership',
+        'Guided training',
+        'Individual approach',
+        'Boutique environment',
+        'Female-focused experience',
       ],
     },
     application: {
@@ -207,16 +210,18 @@ const content = {
       label: 'Main navigation',
     },
     hero: {
-      eyebrow: 'Women’s Private Gym',
+      eyebrow: 'Beyond Training',
       title: 'A different kind of gym.',
       text: 'ÉLAN is a community for women who invest in their health, strength and quality of life.',
       primary: 'Join the Waiting List',
       secondary: 'About ÉLAN',
     },
     statement: {
-      kicker: 'Beyond Training',
+      kicker: 'A different kind of gym.',
       title: 'About ÉLAN',
       text: 'ÉLAN is a private gym for women, designed as an alternative to traditional fitness centres. A space where privacy, training quality and atmosphere matter as much as results.',
+      support:
+        'Only carefully guided training, professional support and an environment that allows you to focus on yourself and your goals.',
       note: 'No crowding. No waiting for equipment. No generic programs.',
     },
     difference: {
@@ -311,11 +316,11 @@ const content = {
     membership: {
       kicker: 'Membership',
       title: 'Limited Membership',
-      note: 'Memberships designed around your goals, schedule and progress. Membership is available by application.',
+      note: 'Memberships designed around your goals, schedule and progress.',
       highlights: [
-        'Limited membership',
-        'Guided training',
-        'Individual approach',
+        'We believe training quality begins with the quality of the environment.',
+        'That is why the number of members is limited.',
+        'Membership is available by application.',
       ],
       items: [
         {
@@ -355,14 +360,15 @@ const content = {
       panel: 'Boutique Training Environment',
     },
     audience: {
-      kicker: 'Training',
+      kicker: 'Your ÉLAN Journey',
       title: 'Designed around women.',
-      text: 'Training programs are created to support strength, health and long-term results. No generic approach. No fitness trends. Focus on what works.',
+      text: 'Every membership begins with a consultation designed to understand your goals, experience and lifestyle. From there, the ÉLAN approach stays personal, structured and focused on long-term progress.',
       items: [
-        'Initial consultation to understand goals and starting level',
-        'Programs adapted to your pace, abilities and desired results',
-        'Guided appointments with professional trainer supervision',
-        'Continuity, safety and progress aligned with each member',
+        'Limited membership',
+        'Guided training',
+        'Individual approach',
+        'Boutique environment',
+        'Female-focused experience',
       ],
     },
     application: {
@@ -565,7 +571,7 @@ export default function Home() {
           onClick={handleHomeClick}
         >
           <span className="brand-mark">ÉLAN</span>
-          <span className="brand-descriptor">Women’s Strength Club</span>
+          <span className="brand-descriptor">Women’s Private Gym</span>
         </a>
         <div
           className={`header-actions ${isMenuOpen ? 'is-open' : ''}`}
@@ -645,6 +651,7 @@ export default function Home() {
         <h2>{copy.statement.title}</h2>
         <p>{copy.statement.text}</p>
         <span>{copy.statement.note}</span>
+        <p>{copy.statement.support}</p>
       </section>
 
       <section className="difference section-shell">
