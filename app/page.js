@@ -173,6 +173,16 @@ const content = {
         'Na taj način obezbeđujemo fleksibilnost za članice, uz očuvanje kvaliteta rada i organizacije treninga.',
       ],
     },
+    bookingApp: {
+      kicker: 'ÉLAN APP',
+      title: 'Zakazivanje uvek pri ruci.',
+      text: 'Raspored treninga ostaje pregledan i jednostavan, uz diskretan pristup terminima i promenama kada je to potrebno.',
+      codeLabel: 'Pređi za scan',
+      links: [
+        'App Store',
+        'Google Play',
+      ],
+    },
     application: {
       kicker: 'Join the Waiting List',
       title: 'Budite među prvima.',
@@ -369,6 +379,16 @@ const content = {
         'If you are unable to attend, the appointment can be cancelled in time through the app.',
         'Appointments cancelled in time will not be charged and can be made up in the first available appointment with the selected trainer.',
         'This gives members flexibility while preserving the quality of work and training organisation.',
+      ],
+    },
+    bookingApp: {
+      kicker: 'ÉLAN APP',
+      title: 'Scheduling, always within reach.',
+      text: 'Your training schedule stays clear and simple, with discreet access to appointments and changes when needed.',
+      codeLabel: 'Hover to scan',
+      links: [
+        'App Store',
+        'Google Play',
       ],
     },
     application: {
@@ -655,39 +675,41 @@ export default function Home() {
       </section>
 
       <section className="space">
-        <div className="space__copy">
-          <p className="section-kicker">{copy.space.kicker}</p>
-          <h2>{copy.space.title}</h2>
-          <p>{copy.space.text}</p>
-        </div>
-        <div
-          className="space__panel"
-          aria-label={copy.space.panel}
-          onTouchStart={handleSpaceTouchStart}
-          onTouchMove={handleSpaceTouchMove}
-          onTouchEnd={handleSpaceTouchEnd}
-          onTouchCancel={resetSpaceTouch}
-        >
-          <div className="space-carousel">
-            {spaceSlides.map((slide, index) => {
-              const isActive = activeSpaceSlide === index;
-
-              return (
-                <div
-                  className={`space-carousel__slide ${isActive ? 'is-active' : ''}`}
-                  key={`${slide.src}-${index}`}
-                  style={{
-                    '--slide-image': `url('${slide.src}')`,
-                    '--slide-position': slide.position,
-                    '--slide-index': index,
-                    '--slide-offset': getSpaceSlideOffset(index),
-                  }}
-                />
-              );
-            })}
+        <div className="space__inner">
+          <div className="space__copy">
+            <p className="section-kicker">{copy.space.kicker}</p>
+            <h2>{copy.space.title}</h2>
+            <p>{copy.space.text}</p>
           </div>
-          <span>ÉLAN</span>
-          <small>{copy.space.panel}</small>
+          <div
+            className="space__panel"
+            aria-label={copy.space.panel}
+            onTouchStart={handleSpaceTouchStart}
+            onTouchMove={handleSpaceTouchMove}
+            onTouchEnd={handleSpaceTouchEnd}
+            onTouchCancel={resetSpaceTouch}
+          >
+            <div className="space-carousel">
+              {spaceSlides.map((slide, index) => {
+                const isActive = activeSpaceSlide === index;
+
+                return (
+                  <div
+                    className={`space-carousel__slide ${isActive ? 'is-active' : ''}`}
+                    key={`${slide.src}-${index}`}
+                    style={{
+                      '--slide-image': `url('${slide.src}')`,
+                      '--slide-position': slide.position,
+                      '--slide-index': index,
+                      '--slide-offset': getSpaceSlideOffset(index),
+                    }}
+                  />
+                );
+              })}
+            </div>
+            <span>ÉLAN</span>
+            <small>{copy.space.panel}</small>
+          </div>
         </div>
       </section>
 
@@ -812,6 +834,30 @@ export default function Home() {
           {copy.bookingPolicy.items.map((item) => (
             <p key={item}>{item}</p>
           ))}
+        </div>
+      </section>
+
+      <section className="booking-app">
+        <div className="booking-app__inner">
+          <div className="booking-app__copy">
+            <p className="section-kicker">{copy.bookingApp.kicker}</p>
+            <h2>{copy.bookingApp.title}</h2>
+            <p>{copy.bookingApp.text}</p>
+            <div className="booking-app__links">
+              {copy.bookingApp.links.map((item) => (
+                <a href="#" key={item}>
+                  {item}
+                </a>
+              ))}
+            </div>
+          </div>
+          <a className="booking-app__code" href="#" aria-label={copy.bookingApp.codeLabel}>
+            <img src={`${assetBasePath}/images/app_img_01.png`} alt="" />
+            <span>
+              <img src={`${assetBasePath}/images/elan-app-qr.svg`} alt="" />
+            </span>
+            <small>{copy.bookingApp.codeLabel}</small>
+          </a>
         </div>
       </section>
 
