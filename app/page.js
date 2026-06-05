@@ -826,13 +826,13 @@ export default function Home() {
       </section>
 
       <section className="booking-policy section-shell">
-        <div>
+        <div className="booking-policy__intro">
           <p className="section-kicker">{copy.bookingPolicy.kicker}</p>
           <h2>{copy.bookingPolicy.title}</h2>
         </div>
         <div className="booking-policy__body">
           {copy.bookingPolicy.items.map((item) => (
-            <p key={item}>{item}</p>
+            <p className="booking-policy__item" key={item}>{item}</p>
           ))}
         </div>
       </section>
