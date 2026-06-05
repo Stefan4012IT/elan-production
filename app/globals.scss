@@ -16,10 +16,11 @@
 @font-face {
   font-family: 'Helvetica ELAN';
   src:
-    url('#{$asset-prefix}/fonts/helvetica-255-cdnfonts/helvetica-light-587ebe5a59211.ttf')
-      format('truetype'),
     local('Helvetica Light'),
-    local('HelveticaNeue-Light');
+    local('Helvetica Neue Light'),
+    local('HelveticaNeue-Light'),
+    url('#{$asset-prefix}/fonts/helvetica-255-cdnfonts/helvetica-light-587ebe5a59211.ttf')
+      format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1943,8 +1944,8 @@ h3 {
 
   .ease {
     display: grid;
-    gap: 22px;
-    padding-top: 0;
+    gap: 30px;
+    padding-top: 24px;
   }
 
   .ease__content {
@@ -1998,7 +1999,15 @@ h3 {
     justify-content: space-between;
   }
 
-  .space__copy,
+  .space__copy {
+    padding: 40px 22px 15px;
+    text-align: center;
+
+    p:not(.section-kicker) {
+      margin-inline: auto;
+    }
+  }
+
   .application {
     padding: 40px 22px;
   }
