@@ -203,7 +203,7 @@ const content = {
       blocked: 'Slanje nije prihvaćeno.',
     },
     footer: {
-      line: 'Women’s Private Gym · Focus · Discipline · Strength',
+      line: ['Women’s Private Gym', 'Focus', 'Discipline', 'Strength'],
       addressLabel: 'Location',
       address: 'Ivankovačka 6, Belgrade · Opening soon',
       phoneLabel: 'Telefon',
@@ -411,7 +411,7 @@ const content = {
       blocked: 'This submission was not accepted.',
     },
     footer: {
-      line: 'Women’s Private Gym · Focus · Discipline · Strength',
+      line: ['Women’s Private Gym', 'Focus', 'Discipline', 'Strength'],
       addressLabel: 'Location',
       address: 'Ivankovačka 6, Belgrade · Opening soon',
       phoneLabel: 'Phone',
@@ -954,7 +954,11 @@ export default function Home() {
       <footer className="site-footer">
         <div className="site-footer__brand">
           <span className="brand-mark">ÉLAN</span>
-          <p>{copy.footer.line}</p>
+          <p>
+            {copy.footer.line.map((item) => (
+              <span key={item}>{item}</span>
+            ))}
+          </p>
         </div>
         <div className="site-footer__details">
           <div>
