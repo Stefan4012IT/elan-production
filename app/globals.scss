@@ -61,7 +61,7 @@
   --heading-font-legacy: 'Optima Nova LT Pro', Optima, 'Optima Nova', 'Cormorant Garamond',
     Georgia, serif;
   --body-font-legacy: 'Inter', system-ui, sans-serif;
-  --heading-font: 'Helvetica ELAN', Helvetica, Arial, var(--heading-font-legacy);
+  --heading-font: 'Helvetica Neue', Helvetica, Arial, var(--heading-font-legacy);
   --body-font: 'Montserrat', var(--body-font-legacy);
 }
 
@@ -1682,6 +1682,17 @@ h3 {
 
   .ease__image--right {
     right: -20px;
+  }
+
+  .ease__content {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .ease__content ul,
+  .ease__content li {
+    text-align: center;
   }
 
   .section-heading {
