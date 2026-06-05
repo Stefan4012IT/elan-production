@@ -16,7 +16,8 @@
 @font-face {
   font-family: 'Helvetica ELAN';
   src:
-    url('#{$asset-prefix}/fonts/helvetica/Helvetica-Light.ttf') format('truetype'),
+    url('#{$asset-prefix}/fonts/helvetica-255-cdnfonts/helvetica-light-587ebe5a59211.ttf')
+      format('truetype'),
     local('Helvetica Light'),
     local('HelveticaNeue-Light');
   font-weight: 300;
@@ -27,7 +28,7 @@
 @font-face {
   font-family: 'Helvetica ELAN';
   src:
-    url('#{$asset-prefix}/fonts/helvetica/Helvetica.ttf') format('truetype'),
+    url('#{$asset-prefix}/fonts/helvetica-255-cdnfonts/Helvetica.ttf') format('truetype'),
     local('Helvetica'),
     local('Helvetica Neue');
   font-weight: 400;
@@ -38,11 +39,35 @@
 @font-face {
   font-family: 'Helvetica ELAN';
   src:
-    url('#{$asset-prefix}/fonts/helvetica/Helvetica-Bold.ttf') format('truetype'),
+    url('#{$asset-prefix}/fonts/helvetica-255-cdnfonts/Helvetica-Oblique.ttf')
+      format('truetype'),
+    local('Helvetica Oblique'),
+    local('HelveticaNeue-Italic');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica ELAN';
+  src:
+    url('#{$asset-prefix}/fonts/helvetica-255-cdnfonts/Helvetica-Bold.ttf') format('truetype'),
     local('Helvetica Bold'),
     local('HelveticaNeue-Bold');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica ELAN';
+  src:
+    url('#{$asset-prefix}/fonts/helvetica-255-cdnfonts/Helvetica-BoldOblique.ttf')
+      format('truetype'),
+    local('Helvetica Bold Oblique'),
+    local('HelveticaNeue-BoldItalic');
+  font-weight: 700;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -61,8 +86,8 @@
   --heading-font-legacy: 'Optima Nova LT Pro', Optima, 'Optima Nova', 'Cormorant Garamond',
     Georgia, serif;
   --body-font-legacy: 'Inter', system-ui, sans-serif;
-  --heading-font: 'Helvetica Neue', Helvetica, Arial, var(--heading-font-legacy);
-  --body-font: 'Montserrat', var(--body-font-legacy);
+  --heading-font: 'Helvetica ELAN', 'Helvetica Neue', Helvetica, Arial, var(--heading-font-legacy);
+  --body-font: 'Helvetica ELAN', 'Montserrat', var(--body-font-legacy);
 }
 
 * {
@@ -727,10 +752,10 @@ h3 {
       width: 5px;
       height: 5px;
       border-radius: 50%;
-      background: var(--border);
+      background: var(--text);
       box-shadow:
-        -12px 0 0 var(--border),
-        12px 0 0 var(--border);
+        -12px 0 0 var(--text),
+        12px 0 0 var(--text);
       transform: translateX(-50%);
     }
   }
