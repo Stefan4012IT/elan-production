@@ -677,9 +677,9 @@ export default function Home() {
       <section className="space">
         <div className="space__inner">
           <div className="space__copy">
-            <p className="section-kicker">{copy.space.kicker}</p>
-            <h2>{copy.space.title}</h2>
-            <p>{copy.space.text}</p>
+            <p className="section-kicker space__kicker">{copy.space.kicker}</p>
+            <h2 className="space__title">{copy.space.title}</h2>
+            <p className="space__text">{copy.space.text}</p>
           </div>
           <div
             className="space__panel"
