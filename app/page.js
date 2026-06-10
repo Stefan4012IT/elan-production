@@ -12,15 +12,15 @@ const content = {
       label: 'Glavna navigacija',
     },
     hero: {
-      eyebrow: 'Beyond Training',
+      eyebrow: 'VIŠE OD TRENINGA',
       title: 'Snaga, gracioznost, disciplina.',
       text: 'ÉLAN je privatni prostor za trening namenjen ženama koje žele da grade snagu u mirnom, fokusiranom i prefinjenom okruženju.',
       primary: 'Join the Waiting List',
-      secondary: 'O ÉLAN',
+      secondary: null,
     },
     statement: {
       kicker: 'ÉLAN',
-      title: 'A different kind of gym.',
+      title: 'Drugačiji pristup treningu.',
       text: 'ÉLAN je zajednica žena koje ulažu u svoje zdravlje, snagu i kvalitet života. Prostor u kome su privatnost, kvalitet treninga i atmosfera podjednako važni kao i rezultati.',
       support:
         'Samo pažljivo vođeni treninzi, stručna podrška i okruženje koje omogućava da se fokusirate na sebe i svoje ciljeve.',
@@ -87,32 +87,30 @@ const content = {
       ],
     },
     trainingConcept: {
-      kicker: 'Trening koncept',
+      kicker: 'KONCEPT TRENINGA',
       title: 'Individualan pristup. Vođeni treninzi.',
       text: 'Svaka klijentkinja prolazi kroz inicijalne konsultacije tokom kojih definišemo ciljeve, iskustvo i individualne potrebe. Na osnovu toga kreira se plan treninga koji se prilagođava vašem tempu, mogućnostima i željenim rezultatima.',
       note: 'Na taj način obezbeđujemo sigurnost, kontinuitet i napredak u skladu sa mogućnostima i ciljevima svake članice.',
       items: [
         {
-          kicker: 'Individual Approach',
-          title: 'Designed around you.',
+          kicker: 'INDIVIDUALNI PRISTUP',
+          title: 'Kreiran prema vašim ciljevima.',
           text: 'Bez obzira da li vam je cilj povećanje snage, oblikovanje tela, gubitak telesne mase ili unapređenje kondicije, pristup ostaje individualan.',
         },
         {
-          kicker: 'Guided Training',
-          title: 'Every session matters.',
+          kicker: 'VOĐENI TRENINZI',
+          title: 'Svaki trening ima svrhu.',
           text: 'Svi treninzi odvijaju se u okviru vođenih termina uz prisustvo trenera, sa jasnom strukturom, stručnim nadzorom i fokusom na kvalitetan rad.',
         },
       ],
     },
     membership: {
-      kicker: 'Membership',
-      title: 'Limited Membership',
-      note: 'Memberships designed around your goals, schedule and progress.',
-      highlights: [
+      kicker: 'Članstvo',
+      title: 'OGRANIČEN BROJ',
+      note: 'Članstvo kreirano prema vašim ciljevima, tempu i napretku.',
+      detail:
         'Verujemo da kvalitet treninga počinje kvalitetom okruženja.',
-        'Zbog toga je broj članova ograničen.',
-        'Članstvo je dostupno putem prijave.',
-      ],
+      highlights: ['Zbog toga je broj članova ograničen.', 'Članstvo je dostupno putem prijave.'],
       items: [
         {
           name: 'FOCUS',
@@ -145,26 +143,26 @@ const content = {
       ],
     },
     space: {
-      kicker: 'The Space',
-      title: 'Boutique by design.',
+      kicker: 'PROSTOR',
+      title: 'Moderno dizajnirano okruženje za trening',
       text: 'Svaki detalj prostora pažljivo je biran kako bi stvorio okruženje koje inspiriše disciplinu, fokus i doslednost. Minimalistički enterijer, premium oprema i atmosfera koja omogućava da trening bude upravo ono što treba da bude — vreme posvećeno sebi.',
       panel: 'Boutique Training Environment',
     },
     audience: {
       kicker: 'Your ÉLAN Journey',
-      title: 'Designed around women.',
+      title: 'Kreirano za žene.',
       text: 'Svako članstvo počinje konsultacijama kroz koje razumemo vaše ciljeve, iskustvo i način života. Na osnovu toga ÉLAN pristup ostaje ličan, strukturisan i usmeren na dugoročni napredak.',
       items: [
-        'Limited membership',
-        'Guided training',
-        'Individual approach',
-        'Boutique environment',
-        'Female-focused experience',
+        'Ograničen broj članica',
+        'Vođeni treninzi',
+        'Individualan pristup',
+        'Privatno okruženje za trening',
+        'Okruženje namenjeno ženama',
       ],
     },
     bookingPolicy: {
       kicker: 'BOOKING POLICY',
-      title: 'Planned. Flexible. Simple.',
+      title: 'Planirano. Fleksibilno. Jednostavno.',
       items: [
         'Svi paketi važe na mesečnom nivou.',
         'Prilikom učlanjenja rezervišu se željeni termini treninga.',
@@ -295,18 +293,18 @@ const content = {
       ],
     },
     trainingConcept: {
-      kicker: 'Training Concept',
+      kicker: 'TRAINING CONCEPT',
       title: 'Individual approach. Guided training.',
       text: 'Every member begins with an initial consultation where we define goals, experience and individual needs. From there, a training plan is created around your pace, abilities and desired results.',
       note: 'This keeps training safe, consistent and aligned with each member’s possibilities and goals.',
       items: [
         {
-          kicker: 'Individual Approach',
+          kicker: 'INDIVIDUAL APPROACH',
           title: 'Designed around you.',
           text: 'Whether your focus is strength, body composition, weight loss or conditioning, the approach remains personal and adapted to your progress.',
         },
         {
-          kicker: 'Guided Training',
+          kicker: 'GUIDED TRAINING',
           title: 'Every session matters.',
           text: 'All sessions take place in guided appointments with a trainer present, clear structure and professional supervision throughout the work.',
         },
@@ -314,13 +312,11 @@ const content = {
     },
     membership: {
       kicker: 'Membership',
-      title: 'Limited Membership',
+      title: 'LIMITED MEMBERSHIP',
       note: 'Memberships designed around your goals, schedule and progress.',
-      highlights: [
+      detail:
         'We believe training quality begins with the quality of the environment.',
-        'That is why the number of members is limited.',
-        'Membership is available by application.',
-      ],
+      highlights: ['That is why the number of members is limited.', 'Membership is available by application.'],
       items: [
         {
           name: 'FOCUS',
@@ -363,11 +359,11 @@ const content = {
       title: 'Designed around women.',
       text: 'Every membership begins with a consultation designed to understand your goals, experience and lifestyle. From there, the ÉLAN approach stays personal, structured and focused on long-term progress.',
       items: [
-        'Limited membership',
+        'Limited number of members',
         'Guided training',
         'Individual approach',
-        'Boutique environment',
-        'Female-focused experience',
+        'Private training environment',
+        'Environment designed for women',
       ],
     },
     bookingPolicy: {
@@ -659,9 +655,11 @@ export default function Home() {
             <a className="button button--dark" href="#apply">
               {copy.hero.primary}
             </a>
-            <a className="button button--light" href="#club">
-              {copy.hero.secondary}
-            </a>
+            {copy.hero.secondary ? (
+              <a className="button button--light" href="#club">
+                {copy.hero.secondary}
+              </a>
+            ) : null}
           </div>
         </div>
       </section>
@@ -778,12 +776,15 @@ export default function Home() {
         <div className="membership__intro">
           <p className="section-kicker">{copy.membership.kicker}</p>
           <h2>{copy.membership.title}</h2>
-          <p>{copy.membership.note}</p>
-          <ul className="membership-highlights">
-            {copy.membership.highlights.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+          {copy.membership.note ? <p>{copy.membership.note}</p> : null}
+          {copy.membership.detail ? <p>{copy.membership.detail}</p> : null}
+          {copy.membership.highlights ? (
+            <ul className="membership-highlights">
+              {copy.membership.highlights.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          ) : null}
           <a className="button button--dark" href="#apply">
             {copy.application.cta}
           </a>
