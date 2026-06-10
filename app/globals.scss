@@ -1476,12 +1476,11 @@ h3 {
   p {
     max-width: 360px;
     margin: 18px 0 0;
-    color: var(--muted);
+    color: #1f1f1f;
     font-size: var(--label-size);
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0;
     line-height: 1.85;
-    text-transform: uppercase;
   }
 
   p span {

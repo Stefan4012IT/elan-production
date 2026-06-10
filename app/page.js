@@ -15,7 +15,7 @@ const content = {
       eyebrow: 'VIŠE OD TRENINGA',
       title: 'Snaga, gracioznost, disciplina.',
       text: 'ÉLAN je privatni prostor za trening namenjen ženama koje žele da grade snagu u mirnom, fokusiranom i prefinjenom okruženju.',
-      primary: 'Join the Waiting List',
+      primary: 'Prijavi se za članstvo',
       secondary: null,
     },
     statement: {
@@ -110,7 +110,7 @@ const content = {
       note: 'Članstvo kreirano prema vašim ciljevima, tempu i napretku.',
       detail:
         'Verujemo da kvalitet treninga počinje kvalitetom okruženja.',
-      highlights: ['Zbog toga je broj članova ograničen.', 'Članstvo je dostupno putem prijave.'],
+      highlights: 'Zbog toga je broj članova ograničen. Članstvo je dostupno putem prijave.',
       items: [
         {
           name: 'FOCUS',
@@ -190,8 +190,8 @@ const content = {
       phone: 'Telefon',
       focus: 'Trening fokus',
       focusPlaceholder: 'Nisam još odlučila',
-      cta: 'Prijavi se',
-      submit: 'Join the Waiting List',
+      cta: 'Prijavi se za članstvo',
+      submit: 'Prijavi se za članstvo',
       success: 'Prijava je poslata.',
       successTitle: 'Prijava je primljena.',
       successText:
@@ -316,7 +316,7 @@ const content = {
       note: 'Memberships designed around your goals, schedule and progress.',
       detail:
         'We believe training quality begins with the quality of the environment.',
-      highlights: ['That is why the number of members is limited.', 'Membership is available by application.'],
+      highlights: 'That is why the number of members is limited. Membership is available by application.',
       items: [
         {
           name: 'FOCUS',
@@ -778,13 +778,7 @@ export default function Home() {
           <h2>{copy.membership.title}</h2>
           {copy.membership.note ? <p>{copy.membership.note}</p> : null}
           {copy.membership.detail ? <p>{copy.membership.detail}</p> : null}
-          {copy.membership.highlights ? (
-            <ul className="membership-highlights">
-              {copy.membership.highlights.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          ) : null}
+          {copy.membership.highlights ? <p>{copy.membership.highlights}</p> : null}
           <a className="button button--dark" href="#apply">
             {copy.application.cta}
           </a>
