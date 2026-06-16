@@ -89,7 +89,7 @@ const content = {
     trainingConcept: {
       kicker: 'KONCEPT TRENINGA',
       title: 'Individualan pristup. Vođeni treninzi.',
-      text: 'Svaka klijentkinja prolazi kroz inicijalne konsultacije tokom kojih definišemo ciljeve, iskustvo i individualne potrebe. Na osnovu toga kreiramo plan treninga koji se prilagođava vašem tempu, mogućnostima i željenim rezultatima.',
+      text: 'Svako članstvo počinje konsultacijama kroz koje razumemo vaše ciljeve, iskustvo i način života. Na osnovu toga ÉLAN pristup ostaje ličan, strukturisan i usmeren na dugoročni napredak.',
       note: 'Na taj način obezbeđujemo sigurnost, kontinuitet i napredak u skladu sa mogućnostima i ciljevima svake članice.',
       items: [
         {
@@ -164,9 +164,9 @@ const content = {
       panel: 'Boutique Training Environment',
     },
     audience: {
-      kicker: 'Your ÉLAN Journey',
+      kicker: 'Teretana na drugačiji način',
       title: 'Kreirano za žene.',
-      text: 'Svako članstvo počinje konsultacijama kroz koje razumemo vaše ciljeve, iskustvo i način života. Na osnovu toga ÉLAN pristup ostaje ličan, strukturisan i usmeren na dugoročni napredak.',
+      text: 'Svaka klijentkinja prolazi kroz inicijalne konsultacije tokom kojih definišemo ciljeve, iskustvo i individualne potrebe. Na osnovu toga kreiramo plan treninga koji se prilagođava vašem tempu, mogućnostima i željenim rezultatima.',
       items: [
         'Ograničen broj članica',
         'Vođeni treninzi',
@@ -197,9 +197,9 @@ const content = {
       ],
     },
     application: {
-      kicker: 'Join the Waiting List',
+      kicker: 'Prijave za članstvo',
       title: 'Budite među prvima.',
-      text: 'Broj članica je ograničen. Prijavite se na listu zainteresovanih i budite među prvima koje će dobiti informacije o otvaranju i upisu.',
+      text: 'Broj članica je ograničen. Prijavite se na listu zainteresovanih i budite među prvima koje će dobiti informacije o pristupu.',
       name: 'Ime',
       email: 'Email',
       phone: 'Telefon',
@@ -216,11 +216,14 @@ const content = {
       blocked: 'Slanje nije prihvaćeno.',
     },
     footer: {
-      line: ['Women’s Private Gym', 'Focus', 'Discipline', 'Strength'],
-      addressLabel: 'Location',
-      address: 'Ivankovačka 6, Belgrade · Opening soon',
-      phoneLabel: 'Telefon',
-      phone: 'Kontakt telefon',
+      line: ['Women’s Private Gym', 'Focus · Discipline · Strength'],
+      addressLabel: 'Lokacija',
+      address: ['Ivankovačka 6', 'Lokal 7'],
+      phoneLabel: 'Kontakt',
+      phone: '066 066 166',
+      phoneHref: 'tel:+38166066166',
+      email: 'hello@elanfit.rs',
+      emailHref: 'mailto:hello@elanfit.rs',
       socialLabel: 'Društvene mreže',
     },
   },
@@ -385,7 +388,7 @@ const content = {
       panel: 'Boutique Training Environment',
     },
     audience: {
-      kicker: 'Your ÉLAN Journey',
+      kicker: 'Different kind of gym',
       title: 'Designed around women.',
       text: 'Every membership begins with a consultation designed to understand your goals, experience and lifestyle. From there, the ÉLAN approach stays personal, structured and focused on long-term progress.',
       items: [
@@ -437,11 +440,14 @@ const content = {
       blocked: 'This submission was not accepted.',
     },
     footer: {
-      line: ['Women’s Private Gym', 'Focus', 'Discipline', 'Strength'],
+      line: ['Women’s Private Gym', 'Focus · Discipline · Strength'],
       addressLabel: 'Location',
-      address: 'Ivankovačka 6, Belgrade · Opening soon',
+      address: ['Ivankovačka 6', 'Lokal 7'],
       phoneLabel: 'Phone',
-      phone: 'Contact phone',
+      phone: '066 066 166',
+      phoneHref: 'tel:+38166066166',
+      email: 'hello@elanfit.rs',
+      emailHref: 'mailto:hello@elanfit.rs',
       socialLabel: 'Social',
     },
   },
@@ -1012,19 +1018,28 @@ export default function Home() {
         <div className="site-footer__brand">
           <span className="brand-mark">ÉLAN</span>
           <p>
-            {copy.footer.line.map((item) => (
-              <span key={item}>{item}</span>
+            {copy.footer.line.map((item, index) => (
+              <span className={index === 0 ? 'site-footer__descriptor' : undefined} key={item}>
+                {item}
+              </span>
             ))}
           </p>
         </div>
         <div className="site-footer__details">
           <div>
             <p className="site-footer__label">{copy.footer.addressLabel}</p>
-            <p>{copy.footer.address}</p>
+            {copy.footer.address.map((item) => (
+              <p key={item}>{item}</p>
+            ))}
           </div>
           <div>
             <p className="site-footer__label">{copy.footer.phoneLabel}</p>
-            <p>{copy.footer.phone}</p>
+            <p>
+              <a href={copy.footer.phoneHref}>{copy.footer.phone}</a>
+            </p>
+            <p>
+              <a href={copy.footer.emailHref}>{copy.footer.email}</a>
+            </p>
           </div>
           <div>
             <p className="site-footer__label">{copy.footer.socialLabel}</p>
@@ -1032,7 +1047,12 @@ export default function Home() {
               <a href="#" aria-label="ÉLAN Facebook">
                 FB
               </a>
-              <a href="#" aria-label="ÉLAN Instagram">
+              <a
+                href="https://www.instagram.com/elan_gym"
+                aria-label="ÉLAN Instagram"
+                target="_blank"
+                rel="noreferrer"
+              >
                 IG
               </a>
             </div>
