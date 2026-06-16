@@ -28,7 +28,7 @@ const content = {
     },
     difference: {
       kicker: 'ÉLAN iskustvo',
-      title: 'More focus. Less distraction.',
+      title: 'Bez buke. Bez gužve.',
       items: [
         {
           eyebrow: 'Limited Membership',
@@ -73,8 +73,8 @@ const content = {
       ],
     },
     ease: {
-      kicker: 'THE ÉLAN EXPERIENCE',
-      title: 'More focus. Less distraction.',
+      kicker: 'ELAN iskustvo',
+      title: 'Bez buke. Bez gužve.',
       items: [
         'Ograničen broj članica',
         'Vođeni treninzi uz stručan nadzor',
@@ -89,7 +89,7 @@ const content = {
     trainingConcept: {
       kicker: 'KONCEPT TRENINGA',
       title: 'Individualan pristup. Vođeni treninzi.',
-      text: 'Svaka klijentkinja prolazi kroz inicijalne konsultacije tokom kojih definišemo ciljeve, iskustvo i individualne potrebe. Na osnovu toga kreira se plan treninga koji se prilagođava vašem tempu, mogućnostima i željenim rezultatima.',
+      text: 'Svaka klijentkinja prolazi kroz inicijalne konsultacije tokom kojih definišemo ciljeve, iskustvo i individualne potrebe. Na osnovu toga kreiramo plan treninga koji se prilagođava vašem tempu, mogućnostima i željenim rezultatima.',
       note: 'Na taj način obezbeđujemo sigurnost, kontinuitet i napredak u skladu sa mogućnostima i ciljevima svake članice.',
       items: [
         {
@@ -109,30 +109,30 @@ const content = {
       title: 'Ograničen broj članica',
       note: 'Članstvo kreirano prema vašim ciljevima, tempu i napretku.',
       detail:
-        'Verujemo da kvalitet treninga počinje kvalitetom okruženja.',
-      highlights: 'Zbog toga je broj članova ograničen. Članstvo je dostupno putem prijave.',
+        'Verujemo da kvalitet treninga počinje kvalitetom okruženja i zbog toga je broj članova ograničen. Članstvo je dostupno putem prijave.',
+      highlights: null,
       items: [
         {
           name: 'FOCUS',
           detail: '8 treninga mesečno',
-          originalPrice: '20.000 RSD',
-          price: '16.000 RSD',
+          originalPrice: '24.000 RSD',
+          price: '20.000 RSD',
           description:
             'Za one koje žele kontinuitet i ravnotežu između treninga i svakodnevnih obaveza.',
         },
         {
           name: 'DISCIPLINE',
           detail: '10 treninga mesečno',
-          originalPrice: '22.000 RSD',
-          price: '18.000 RSD',
+          originalPrice: '26.000 RSD',
+          price: '22.000 RSD',
           description:
             'Za one koje veruju da rezultati dolaze kroz doslednost i posvećen rad.',
         },
         {
           name: 'STRENGTH',
           detail: '12 treninga mesečno',
-          originalPrice: '24.000 RSD',
-          price: '20.000 RSD',
+          originalPrice: '28.000 RSD',
+          price: '24.000 RSD',
           description:
             'Za one koje žele maksimalnu podršku, napredak i posvećenost svojim ciljevima.',
         },
@@ -146,12 +146,12 @@ const content = {
       ],
     },
     earlyAccess: {
-      kicker: 'Early Access',
+      kicker: 'Rane prijave',
       title: 'Treniraj sada. Zadrži svoju cenu cele godine.',
       intro:
-        'Elan Gym već živi svoj letnji ritam — treninzi su u toku, a prve članice imaju pristup posebnim Early Access uslovima pre zvaničnog Grand Openinga, 1. septembra 2026.',
+        'Elan Gym već živi svoj letnji ritam — treninzi su u toku, a prve članice imaju pristup posebnim Early Access uslovima pre zvaničnog otvaranja, 15. septembra 2026.',
       text:
-        'Paket koji izabereš sada zaključava promotivnu cenu tokom celog perioda tvoje članarine. Od 1. septembra važi zvanični cenovnik, a broj Early Access članstava je ograničen.',
+        'Paket koji izabereš sada zaključava promotivnu cenu tokom celog perioda tvoje članarine. Od 15. septembra važi zvanični cenovnik, a broj Early Access članstava je ograničen.',
       note:
         'Obezbedi svoj Elan Membership na vreme i postani deo zajednice koja kreće prva.',
       benefits: ['Promotivna cena', 'Cena zaključana cele godine', 'Ograničen broj mesta'],
@@ -176,7 +176,7 @@ const content = {
       ],
     },
     bookingPolicy: {
-      kicker: 'BOOKING POLICY',
+      kicker: 'Pravila zakazivanja',
       title: 'Planirano. Fleksibilno. Jednostavno.',
       items: [
         'Svi paketi važe na mesečnom nivou.',
@@ -249,7 +249,7 @@ const content = {
     },
     difference: {
       kicker: 'The ÉLAN Experience',
-      title: 'More focus. Less distraction.',
+      title: 'Not loud. Not crowded.',
       items: [
         {
           eyebrow: 'Limited Membership',
@@ -295,7 +295,7 @@ const content = {
     },
     ease: {
       kicker: 'THE ÉLAN EXPERIENCE',
-      title: 'More focus. Less distraction.',
+      title: 'Not loud. Not crowded.',
       items: [
         'Limited number of members',
         'Guided training with professional supervision',
@@ -330,30 +330,30 @@ const content = {
       title: 'Limited Membership',
       note: 'Memberships designed around your goals, schedule and progress.',
       detail:
-        'We believe training quality begins with the quality of the environment.',
-      highlights: 'That is why the number of members is limited. Membership is available by application.',
+        'We believe training quality begins with the quality of the environment. That is why the number of members is limited. Membership is available by application.',
+      highlights: null,
       items: [
         {
           name: 'FOCUS',
           detail: '8 sessions per month',
-          originalPrice: '20,000 RSD',
-          price: '16,000 RSD',
+          originalPrice: '24,000 RSD',
+          price: '20,000 RSD',
           description:
             'For those who want continuity and balance between training and everyday responsibilities.',
         },
         {
           name: 'DISCIPLINE',
           detail: '10 sessions per month',
-          originalPrice: '22,000 RSD',
-          price: '18,000 RSD',
+          originalPrice: '26,000 RSD',
+          price: '22,000 RSD',
           description:
             'For those who believe results come through consistency and dedicated work.',
         },
         {
           name: 'STRENGTH',
           detail: '12 sessions per month',
-          originalPrice: '24,000 RSD',
-          price: '20,000 RSD',
+          originalPrice: '28,000 RSD',
+          price: '24,000 RSD',
           description:
             'For those who want maximum support, progress and commitment to their goals.',
         },
@@ -370,9 +370,9 @@ const content = {
       kicker: 'Early Access',
       title: 'Train now. Keep your price all year.',
       intro:
-        'Elan Gym is already moving in its summer rhythm. Training sessions are underway, and the first members have access to special Early Access terms before the official Grand Opening on September 1, 2026.',
+        'Elan Gym is already moving in its summer rhythm. Training sessions are underway, and the first members have access to special Early Access terms before the official Grand Opening on September 15, 2026.',
       text:
-        'The package you choose now locks in the promotional price for the full duration of your membership. From September 1, the official price list applies, and the number of Early Access memberships is limited.',
+        'The package you choose now locks in the promotional price for the full duration of your membership. From September 15, the official price list applies, and the number of Early Access memberships is limited.',
       note:
         'Secure your Elan Membership in time and become part of the community that starts first.',
       benefits: ['Promotional price', 'Price locked all year', 'Limited availability'],
@@ -911,7 +911,7 @@ export default function Home() {
           <a className="booking-app__code" href="#" aria-label={copy.bookingApp.codeLabel}>
             <img src={`${assetBasePath}/images/app_img_01.png`} alt="" />
             <span>
-              <img src={`${assetBasePath}/images/elan-app-qr.svg`} alt="" />
+              <img src={`${assetBasePath}/images/ELAN_QR_Code.png`} alt="" />
             </span>
             <small>{copy.bookingApp.codeLabel}</small>
           </a>
