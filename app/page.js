@@ -106,7 +106,7 @@ const content = {
     },
     membership: {
       kicker: 'Članstvo',
-      title: 'OGRANIČEN BROJ',
+      title: 'Ograničen broj članica',
       note: 'Članstvo kreirano prema vašim ciljevima, tempu i napretku.',
       detail:
         'Verujemo da kvalitet treninga počinje kvalitetom okruženja.',
@@ -115,21 +115,24 @@ const content = {
         {
           name: 'FOCUS',
           detail: '8 treninga mesečno',
-          price: '20.000 RSD',
+          originalPrice: '20.000 RSD',
+          price: '16.000 RSD',
           description:
             'Za one koje žele kontinuitet i ravnotežu između treninga i svakodnevnih obaveza.',
         },
         {
           name: 'DISCIPLINE',
           detail: '10 treninga mesečno',
-          price: '22.000 RSD',
+          originalPrice: '22.000 RSD',
+          price: '18.000 RSD',
           description:
             'Za one koje veruju da rezultati dolaze kroz doslednost i posvećen rad.',
         },
         {
           name: 'STRENGTH',
           detail: '12 treninga mesečno',
-          price: '24.000 RSD',
+          originalPrice: '24.000 RSD',
+          price: '20.000 RSD',
           description:
             'Za one koje žele maksimalnu podršku, napredak i posvećenost svojim ciljevima.',
         },
@@ -141,6 +144,18 @@ const content = {
             'Jedan vođeni trening za upoznavanje sa ÉLAN pristupom ili fokusiran rad na određenom cilju.',
         },
       ],
+    },
+    earlyAccess: {
+      kicker: 'Early Access',
+      title: 'Treniraj sada. Zadrži svoju cenu cele godine.',
+      intro:
+        'Elan Gym već živi svoj letnji ritam — treninzi su u toku, a prve članice imaju pristup posebnim Early Access uslovima pre zvaničnog Grand Openinga, 1. septembra 2026.',
+      text:
+        'Paket koji izabereš sada zaključava promotivnu cenu tokom celog perioda tvoje članarine. Od 1. septembra važi zvanični cenovnik, a broj Early Access članstava je ograničen.',
+      note:
+        'Obezbedi svoj Elan Membership na vreme i postani deo zajednice koja kreće prva.',
+      benefits: ['Promotivna cena', 'Cena zaključana cele godine', 'Ograničen broj mesta'],
+      cta: 'Prijavi se za članstvo',
     },
     space: {
       kicker: 'PROSTOR',
@@ -312,7 +327,7 @@ const content = {
     },
     membership: {
       kicker: 'Membership',
-      title: 'LIMITED MEMBERSHIP',
+      title: 'Limited Membership',
       note: 'Memberships designed around your goals, schedule and progress.',
       detail:
         'We believe training quality begins with the quality of the environment.',
@@ -321,21 +336,24 @@ const content = {
         {
           name: 'FOCUS',
           detail: '8 sessions per month',
-          price: '20,000 RSD',
+          originalPrice: '20,000 RSD',
+          price: '16,000 RSD',
           description:
             'For those who want continuity and balance between training and everyday responsibilities.',
         },
         {
           name: 'DISCIPLINE',
           detail: '10 sessions per month',
-          price: '22,000 RSD',
+          originalPrice: '22,000 RSD',
+          price: '18,000 RSD',
           description:
             'For those who believe results come through consistency and dedicated work.',
         },
         {
           name: 'STRENGTH',
           detail: '12 sessions per month',
-          price: '24,000 RSD',
+          originalPrice: '24,000 RSD',
+          price: '20,000 RSD',
           description:
             'For those who want maximum support, progress and commitment to their goals.',
         },
@@ -347,6 +365,18 @@ const content = {
             'One guided session for discovering the ÉLAN approach or focusing on a specific goal.',
         },
       ],
+    },
+    earlyAccess: {
+      kicker: 'Early Access',
+      title: 'Train now. Keep your price all year.',
+      intro:
+        'Elan Gym is already moving in its summer rhythm. Training sessions are underway, and the first members have access to special Early Access terms before the official Grand Opening on September 1, 2026.',
+      text:
+        'The package you choose now locks in the promotional price for the full duration of your membership. From September 1, the official price list applies, and the number of Early Access memberships is limited.',
+      note:
+        'Secure your Elan Membership in time and become part of the community that starts first.',
+      benefits: ['Promotional price', 'Price locked all year', 'Limited availability'],
+      cta: 'Apply for membership',
     },
     space: {
       kicker: 'The Space',
@@ -772,6 +802,33 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="early-access" id="early-access">
+        <div className="early-access__inner">
+          <div className="early-access__intro">
+            <p className="section-kicker">{copy.earlyAccess.kicker}</p>
+            <h2>{copy.earlyAccess.title}</h2>
+          </div>
+          <div className="early-access__body">
+            <p>{copy.earlyAccess.intro}</p>
+            <p>{copy.earlyAccess.text}</p>
+            <p>{copy.earlyAccess.note}</p>
+            <ul className="early-access__benefits">
+              {copy.earlyAccess.benefits.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <a className="button button--dark" href="#apply">
+              {copy.earlyAccess.cta}
+            </a>
+          </div>
+          <a className="early-access__cue" href="#membership" aria-label={copy.membership.title}>
+            <span />
+            <span />
+            <span />
+          </a>
+        </div>
+      </section>
+
       <section className="membership section-shell" id="membership">
         <div className="membership__intro">
           <p className="section-kicker">{copy.membership.kicker}</p>
@@ -803,7 +860,12 @@ export default function Home() {
                     <p>{item.detail}</p>
                   </div>
                   <span className="membership-row__meta">
-                    <strong>{item.price}</strong>
+                    <span className="membership-row__prices">
+                      {item.originalPrice ? (
+                        <span className="membership-row__price-old">{item.originalPrice}</span>
+                      ) : null}
+                      <strong>{item.price}</strong>
+                    </span>
                     <span className="membership-row__arrow" aria-hidden="true" />
                   </span>
                 </button>

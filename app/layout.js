@@ -1,7 +1,7 @@
 import './globals.scss';
 
 export const metadata = {
-  title: 'ÉLAN | Privatni klub snage za žene',
+  title: 'ÉLAN | Women’s Private Gym',
   description:
     'Privatni prostor za trening namenjen ženama koje žele da grade snagu u mirnom, fokusiranom i prefinjenom okruženju.',
 };
