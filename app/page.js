@@ -218,7 +218,7 @@ const content = {
     footer: {
       line: ['Women’s Private Gym', 'Focus · Discipline · Strength'],
       addressLabel: 'Lokacija',
-      address: ['Ivankovačka 6', 'Lokal 7'],
+      address: ['Ivankovačka 6', 'Beograd'],
       phoneLabel: 'Kontakt',
       phone: '066 066 166',
       phoneHref: 'tel:+38166066166',
@@ -442,7 +442,7 @@ const content = {
     footer: {
       line: ['Women’s Private Gym', 'Focus · Discipline · Strength'],
       addressLabel: 'Location',
-      address: ['Ivankovačka 6', 'Lokal 7'],
+      address: ['Ivankovačka 6', 'Beograd'],
       phoneLabel: 'Phone',
       phone: '066 066 166',
       phoneHref: 'tel:+38166066166',

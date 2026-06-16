@@ -1556,7 +1556,7 @@ h3 {
 .site-footer {
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
   gap: clamp(30px, 6vw, 76px);
   margin: clamp(24px, 5vw, 56px) 0 0;
   padding: clamp(38px, 6vw, 64px)
@@ -1577,7 +1577,7 @@ h3 {
 
   p {
     max-width: 360px;
-    margin: 18px 0 0;
+    margin: 5px 0 0;
     color: #1f1d1b;
     font-size: var(--label-size);
     font-weight: 700;
@@ -1629,15 +1629,17 @@ h3 {
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .site-footer__socials {
   display: flex;
   gap: 8px;
+  margin-top: 7px;
 
   a {
-    min-width: 44px;
-    height: 34px;
+    min-width: 55px;
+    height: 45px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
