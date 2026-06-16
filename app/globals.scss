@@ -2110,6 +2110,18 @@ h3 {
     padding-bottom: var(--mobile-section-y);
   }
 
+  .early-access__inner {
+    padding-bottom: calc(var(--mobile-section-y) + 40px);
+  }
+
+  .early-access__cue {
+    bottom: 24px;
+  }
+
+  .membership__intro {
+    padding: var(--mobile-section-y) 20px;
+  }
+
   .feature-grid {
     grid-template-columns: 1fr;
   }
