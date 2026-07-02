@@ -159,7 +159,7 @@ const content = {
     },
     space: {
       kicker: 'PROSTOR',
-      title: 'Moderno dizajnirano okruženje za trening',
+      title: 'Moderno dizajnirano okruženje za efikasan trening',
       text: 'Svaki detalj prostora pažljivo je biran kako bi stvorio okruženje koje inspiriše disciplinu, fokus i doslednost. Minimalistički enterijer, premium oprema i atmosfera koja omogućava da trening bude upravo ono što treba da bude — vreme posvećeno sebi.',
       panel: 'Boutique Training Environment',
     },
@@ -389,7 +389,7 @@ const content = {
     },
     space: {
       kicker: 'The Space',
-      title: 'Boutique by design.',
+      title: 'A modern designed environment for effective training.',
       text: 'Every detail of the space has been carefully chosen to create an environment that inspires discipline, focus and consistency. Minimal interiors, premium equipment and an atmosphere that allows training to be exactly what it should be — time dedicated to yourself.',
       panel: 'Boutique Training Environment',
     },
