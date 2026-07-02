@@ -192,8 +192,14 @@ const content = {
       text: 'Raspored treninga ostaje pregledan i jednostavan, uz diskretan pristup terminima i promenama kada je to potrebno.',
       codeLabel: 'Pređi za scan',
       links: [
-        'App Store',
-        'Google Play',
+        {
+          label: 'App Store',
+          href: 'https://apps.apple.com/us/app/gofitness-app/id6759954935',
+        },
+        {
+          label: 'Google Play',
+          href: 'https://play.google.com/store/apps/details?id=com.gofitness.mobile',
+        },
       ],
     },
     application: {
@@ -416,8 +422,14 @@ const content = {
       text: 'Your training schedule stays clear and simple, with discreet access to appointments and changes when needed.',
       codeLabel: 'Hover to scan',
       links: [
-        'App Store',
-        'Google Play',
+        {
+          label: 'App Store',
+          href: 'https://apps.apple.com/us/app/gofitness-app/id6759954935',
+        },
+        {
+          label: 'Google Play',
+          href: 'https://play.google.com/store/apps/details?id=com.gofitness.mobile',
+        },
       ],
     },
     application: {
@@ -908,8 +920,13 @@ export default function Home() {
             <p>{copy.bookingApp.text}</p>
             <div className="booking-app__links">
               {copy.bookingApp.links.map((item) => (
-                <a href="#" key={item}>
-                  {item}
+                <a
+                  href={item.href}
+                  key={item.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.label}
                 </a>
               ))}
             </div>
