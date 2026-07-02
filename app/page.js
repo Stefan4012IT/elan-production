@@ -149,7 +149,7 @@ const content = {
       kicker: 'Rane prijave',
       title: 'Treniraj sada. Zadrži svoju cenu cele godine.',
       intro:
-        'Elan Gym već živi svoj letnji ritam — treninzi su u toku, a prve članice imaju pristup posebnim Early Access uslovima pre zvaničnog otvaranja, 15. septembra 2026.',
+        'Elan već živi svoj letnji ritam — treninzi su u toku, a prve članice imaju pristup posebnim Early Access uslovima pre zvaničnog otvaranja, 15. septembra 2026.',
       text:
         'Paket koji izabereš sada zaključava promotivnu cenu tokom celog perioda tvoje članarine. Od 15. septembra važi zvanični cenovnik, a broj Early Access članstava je ograničen.',
       note:
