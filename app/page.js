@@ -105,12 +105,14 @@ const content = {
       ],
     },
     membership: {
-      kicker: 'Članstvo',
-      title: 'Ograničen broj članica',
-      note: 'Članstvo kreirano prema vašim ciljevima, tempu i napretku.',
+      kicker: 'Rane prijave',
+      title: 'Treniraj sada. Zadrži svoju cenu cele godine.',
+      note:
+        'Elan već živi svoj letnji ritam — treninzi su u toku, a prve članice imaju pristup posebnim Early Access uslovima pre zvaničnog otvaranja, 15. septembra 2026.',
       detail:
-        'Verujemo da kvalitet treninga počinje kvalitetom okruženja i zbog toga je broj članova ograničen. Članstvo je dostupno putem prijave.',
-      highlights: null,
+        'Paket koji izabereš sada zaključava promotivnu cenu tokom celog perioda tvoje članarine. Od 15. septembra važi zvanični cenovnik, a broj Early Access članstava je ograničen.',
+      highlights:
+        'Obezbedi svoj Elan Membership na vreme i postani deo zajednice koja kreće prva.',
       items: [
         {
           name: 'FOCUS',
@@ -146,15 +148,13 @@ const content = {
       ],
     },
     earlyAccess: {
-      kicker: 'Rane prijave',
-      title: 'Treniraj sada. Zadrži svoju cenu cele godine.',
-      intro:
-        'Elan već živi svoj letnji ritam — treninzi su u toku, a prve članice imaju pristup posebnim Early Access uslovima pre zvaničnog otvaranja, 15. septembra 2026.',
+      kicker: 'Članstvo',
+      title: 'Ograničen broj članica',
+      intro: 'Članstvo kreirano prema vašim ciljevima, tempu i napretku.',
       text:
-        'Paket koji izabereš sada zaključava promotivnu cenu tokom celog perioda tvoje članarine. Od 15. septembra važi zvanični cenovnik, a broj Early Access članstava je ograničen.',
-      note:
-        'Obezbedi svoj Elan Membership na vreme i postani deo zajednice koja kreće prva.',
-      benefits: ['Promotivna cena', 'Cena zaključana cele godine', 'Ograničen broj mesta'],
+        'Verujemo da kvalitet treninga počinje kvalitetom okruženja i zbog toga je broj članova ograničen. Članstvo je dostupno putem prijave.',
+      note: null,
+      benefits: [],
       cta: 'Prijavi se za članstvo',
     },
     space: {
@@ -335,12 +335,14 @@ const content = {
       ],
     },
     membership: {
-      kicker: 'Membership',
-      title: 'Limited Membership',
-      note: 'Memberships designed around your goals, schedule and progress.',
+      kicker: 'Early Access',
+      title: 'Train now. Keep your price all year.',
+      note:
+        'Elan is already moving in its summer rhythm. Training sessions are underway, and the first members have access to special Early Access terms before the official Grand Opening on September 15, 2026.',
       detail:
-        'We believe training quality begins with the quality of the environment. That is why the number of members is limited. Membership is available by application.',
-      highlights: null,
+        'The package you choose now locks in the promotional price for the full duration of your membership. From September 15, the official price list applies, and the number of Early Access memberships is limited.',
+      highlights:
+        'Secure your Elan Membership in time and become part of the community that starts first.',
       items: [
         {
           name: 'FOCUS',
@@ -376,15 +378,13 @@ const content = {
       ],
     },
     earlyAccess: {
-      kicker: 'Early Access',
-      title: 'Train now. Keep your price all year.',
-      intro:
-        'Elan Gym is already moving in its summer rhythm. Training sessions are underway, and the first members have access to special Early Access terms before the official Grand Opening on September 15, 2026.',
+      kicker: 'Membership',
+      title: 'Limited Membership',
+      intro: 'Memberships designed around your goals, schedule and progress.',
       text:
-        'The package you choose now locks in the promotional price for the full duration of your membership. From September 15, the official price list applies, and the number of Early Access memberships is limited.',
-      note:
-        'Secure your Elan Membership in time and become part of the community that starts first.',
-      benefits: ['Promotional price', 'Price locked all year', 'Limited availability'],
+        'We believe training quality begins with the quality of the environment. That is why the number of members is limited. Membership is available by application.',
+      note: null,
+      benefits: [],
       cta: 'Apply for membership',
     },
     space: {
@@ -829,12 +829,14 @@ export default function Home() {
           <div className="early-access__body">
             <p>{copy.earlyAccess.intro}</p>
             <p>{copy.earlyAccess.text}</p>
-            <p>{copy.earlyAccess.note}</p>
-            <ul className="early-access__benefits">
-              {copy.earlyAccess.benefits.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            {copy.earlyAccess.note ? <p>{copy.earlyAccess.note}</p> : null}
+            {copy.earlyAccess.benefits.length ? (
+              <ul className="early-access__benefits">
+                {copy.earlyAccess.benefits.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            ) : null}
             <a className="button button--dark" href="#apply">
               {copy.earlyAccess.cta}
             </a>
