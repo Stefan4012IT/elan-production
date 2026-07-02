@@ -245,8 +245,8 @@ const content = {
       eyebrow: 'Beyond Training',
       title: 'Strength, Grace, Discipline.',
       text: 'ÉLAN is a private training space for women who want to build strength in a calm, focused and refined environment.',
-      primary: 'Join the Waiting List',
-      secondary: 'About ÉLAN',
+      primary: 'Learn more',
+      secondary: null,
     },
     statement: {
       kicker: 'ÉLAN',
