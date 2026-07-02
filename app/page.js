@@ -15,7 +15,7 @@ const content = {
       eyebrow: 'VIŠE OD TRENINGA',
       title: 'Snaga, gracioznost, disciplina.',
       text: 'ÉLAN je privatni prostor za trening namenjen ženama koje žele da grade snagu u mirnom, fokusiranom i prefinjenom okruženju.',
-      primary: 'Prijavi se za članstvo',
+      primary: 'Saznaj više',
       secondary: null,
     },
     statement: {
